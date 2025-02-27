@@ -1,0 +1,63 @@
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 24px;
+    padding-left: 24px;
+
+}
+
+
+#logo{
+    width: 97px;
+    height: 62px;
+    margin-top: 24px;
+}
+
+#hamberger{
+    width: 36px;
+    height: 27px;
+    margin-top: 50px;
+    top: 20px;
+}
+
+#menu{
+    display: flex;
+    width: 660px;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+
+#btn{
+    background-color: #F54748;
+    color: white;
+    width: 162px;
+    height: 45px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 47px;
+}
+
+
+@media (min-width: 1000px) {
+    #hamberger{
+        display: none;
+    }
+
+    #logo{
+        width: 121px;
+        height: 78px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width : 1000px) {
+    #btn{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+}
