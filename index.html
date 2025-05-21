@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="navbar">
-        <img id="logo" src="images/Logo.png" alt="Logo">
-        <div id="menu">
-            <a>Today special offers</a>
-            <a>Today special offers</a>
-            <a>Today special offers</a>
-            <a>Today special offers</p>
-        </div>
-        <button id="btn">Downlode App</button>
-        <img id="hamberger" src="images/Hamberger.png" alt="Hamberger">
 
-    </div>
-    <script src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px;
+            position: sticky;
+        }
+
+        #logo {
+            width: 97px;
+            height: 62px;
+        }
+
+        #hamberger_menu {
+            width: 36px;
+            height: 27px;
+            margin-top: 17px;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        .links {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+        }
+
+        #btn {
+            display: none;
+        }
+
+        #main_menu{
+            display: none;
+            gap: 96px;
+        }
+
+
+        @media (min-width:1024px) {
+            #hamberger_menu {
+                display: none;
+            }
+
+            #menu {
+                display: flex;
+                width: 660px;
+                justify-content: space-between;
+                margin-top: 15px;
+            }
+
+            #btn {
+                display: flex;
+                background-color: #F54748;
+                color: white;
+                border-radius: 100px;
+                width: 162px;
+                height: 45px;
+                justify-content: center;
+                align-items: center;
+                border: 0px;
+            }
+
+            #main_menu{
+            display: flex;
+            gap: 96px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="images/Logo.png" alt="Logo">
+        <img id="hamberger_menu" src="images/Hamberger.png" alt="menu">
+        <div id="main_menu">
+            <div id="menu">
+                <a class="links" href="#">Today special offers</a>
+                <a class="links" href="#">Today special offers</a>
+                <a class="links" href="#">Today special offers</a>
+                <a class="links" href="#">Today special offers</a>
+            </div>
+            <button id="btn">Downlode App</button>
+        </div>
+    </nav>
 </body>
+
 </html>
